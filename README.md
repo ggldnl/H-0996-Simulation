@@ -1,4 +1,4 @@
-# Hexapod Simulation
+# H-0996 Simulation
 
 This repository includes the code to visualize and interact with the robot in Viser and PyBullet.
 
@@ -28,7 +28,7 @@ This repository includes the code to visualize and interact with the robot in Vi
 
 > ⚠️ These PyBullet recordings were taken in a previous version, now the robot is colored
 
-For a complete overview of the project, refer to the [main Hexapod repository](https://github.com/ggldnl/Hexapod).
+For a complete overview of the project, refer to the [main H-0996 repository](https://github.com/ggldnl/Hexapod).
 
 ## 🧠 How it works
 
@@ -150,4 +150,4 @@ The front-ends run as modules from the repository root, with the `hexapod-sim` e
 
 ## 🤝 Contribution
 
-Feel free to contribute by opening issues or submitting pull requests. For further information, check out the [main Hexapod repository](https://github.com/ggldnl/Hexapod). Give a ⭐️ to this project if you liked the content.
+Feel free to contribute by opening issues or submitting pull requests. For further information, check out the [main H-0996 repository](https://github.com/ggldnl/Hexapod). Give a ⭐️ to this project if you liked the content.
