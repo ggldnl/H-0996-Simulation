@@ -1,5 +1,5 @@
 """
-Interactive PyBullet teleop for the Hexapod stack.
+Interactive PyBullet teleop for the H-0996 stack.
 
 Drives the SAME C++ firmware core that runs on the board (via the ctypes bridge),
 through the ordinary Pi-side HexapodClient, with PyBullet as the "hardware". No
@@ -235,7 +235,7 @@ def run_calibrate():
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Interactive PyBullet Hexapod teleop")
+    parser = argparse.ArgumentParser(description="Interactive PyBullet H-0996 teleop")
     parser.add_argument("--urdf", default=str(paths.default_urdf()),
                         help="path to hexapod.urdf")
     parser.add_argument("--gait", "-g", type=str, default="tripod",

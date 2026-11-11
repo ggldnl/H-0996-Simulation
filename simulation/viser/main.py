@@ -1,5 +1,5 @@
 """
-Viser visualization of the Hexapod stack, with live gait controls.
+Viser visualization of the H-0996 stack, with live gait controls.
 
 Runs the REAL C++ firmware core in-process (via the ctypes bridge) and drives it
 with the ordinary Pi-side HexapodClient. Viser renders the URDF in the browser and
@@ -46,7 +46,7 @@ GAIT_ID = {"tripod": GaitId.TRIPOD, "wave": GaitId.WAVE, "ripple": GaitId.RIPPLE
 
 def main() -> None:
 
-    ap = argparse.ArgumentParser(description="Hexapod Viser viz + controls")
+    ap = argparse.ArgumentParser(description="H-0996 Viser viz + controls")
     ap.add_argument("--urdf", default=str(paths.default_urdf()),
                     help="path to hexapod.urdf")
     ap.add_argument("--gait", "-g", default="tripod", choices=list(GAIT_ID))

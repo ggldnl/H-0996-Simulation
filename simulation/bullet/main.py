@@ -1,5 +1,5 @@
 """
-PyBullet physics simulation of the Hexapod.
+PyBullet physics simulation of the H-0996.
 
 Runs the REAL C++ firmware core in-process (via the ctypes bridge) and drives it
 with the ordinary Pi-side HexapodClient, the same client you would use over a
@@ -31,8 +31,8 @@ GAITS = {"tripod": GaitId.TRIPOD, "wave": GaitId.WAVE, "ripple": GaitId.RIPPLE}
 
 
 def main() -> None:
-    
-    ap = argparse.ArgumentParser(description="Hexapod PyBullet demo")
+
+    ap = argparse.ArgumentParser(description="H-0996 PyBullet demo")
     ap.add_argument("--urdf", default=str(paths.default_urdf()),
                     help="path to hexapod.urdf")
     ap.add_argument("--gait", "-g", default="tripod", choices=list(GAITS))
