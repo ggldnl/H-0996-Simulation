@@ -28,11 +28,11 @@ This repository includes the code to visualize and interact with the robot in Vi
 
 > ⚠️ These PyBullet recordings were taken in a previous version, now the robot is colored
 
-For a complete overview of the project, refer to the [main H-0996 repository](https://github.com/ggldnl/Hexapod).
+For a complete overview of the project, refer to the [main H-0996 repository](https://github.com/ggldnl/H-0996).
 
 ## 🧠 How it works
 
-The simulation runs the real firmware core in-process. The [Hexapod-Firmware](https://github.com/ggldnl/Hexapod-Firmware.git) C++ code is compiled into a shared library, and a small ctypes bridge lets Python call it. The same Pi-side [Hexapod-Controller](https://github.com/ggldnl/Hexapod-Controller.git) that talks to the real board drives this library instead of a serial port, and the [Hexapod-Hardware](https://github.com/ggldnl/Hexapod-Hardware.git) URDF and meshes are rendered on top.
+The simulation runs the real firmware core in-process. The [H-0996-Firmware](https://github.com/ggldnl/H-0996-Firmware.git) C++ code is compiled into a shared library, and a small ctypes bridge lets Python call it. The same Pi-side [H-0996-Controller](https://github.com/ggldnl/H-0996-Controller.git) that talks to the real board drives this library instead of a serial port, and the [H-0996-Hardware](https://github.com/ggldnl/H-0996-Hardware.git) URDF and meshes are rendered on top.
 
 The three repositories are pulled in as submodules at the repo root:
 
@@ -74,8 +74,8 @@ You need a C++ compiler (g++) to build the firmware core and `mamba` (or `conda`
 1. Clone the repository with its submodules:
 
    ```bash
-   git clone --recursive https://github.com/ggldnl/Hexapod-Simulation.git
-   cd Hexapod-Simulation
+   git clone --recursive https://github.com/ggldnl/H-0996-Simulation.git
+   cd H-0996-Simulation
    ```
 
    If you already cloned without `--recursive`, pull the submodules in:
@@ -150,4 +150,4 @@ The front-ends run as modules from the repository root, with the `hexapod-sim` e
 
 ## 🤝 Contribution
 
-Feel free to contribute by opening issues or submitting pull requests. For further information, check out the [main H-0996 repository](https://github.com/ggldnl/Hexapod). Give a ⭐️ to this project if you liked the content.
+Feel free to contribute by opening issues or submitting pull requests. For further information, check out the [main H-0996 repository](https://github.com/ggldnl/H-0996). Give a ⭐️ to this project if you liked the content.
